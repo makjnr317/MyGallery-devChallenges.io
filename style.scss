@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profile-photo-img{
+    width: 156px;
+    border-radius: 16px;
+}
+
+h1{
+    color: #4E5150;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 16px 0 8px 0;
+}
+
+.location{
+    font-weight: 600;
+    font-size: 14px;
+    color: #A9A9A9;
+    font-weight: 600;
+}
+
+.stats{
+    display: flex;
+    width:348px;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.stat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    width: 100px;
+    height: 67px;
+    background: #E5E5E5;
+    border-radius: 12px;
+}
+
+.value{
+    font-weight: 600;
+    font-size: 18px;
+    color: #4E5150;
+}
+
+.category{
+    font-weight: 600;
+    font-size: 14px;
+    color: #BDBDBD;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: 20.7645vw 20.7645vw 20.625vw;;
+    grid-gap: 2.223vw;
+    grid-template-rows: 20.7645vw 20.7645vw 20.7645vw;
+    margin-top: 64px;
+    margin-bottom: 9.31vw;
+
+    >figure>img{
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    >figure:nth-child(2){
+        grid-area: 1/2/2/4;
+    }
+
+    >figure:nth-child(3){
+        grid-area: 2/1/3/3;
+    }
+
+    >figure:nth-child(4){
+        grid-area: 2/3/4/4;
+    }
+
+    >figure:nth-child(5){
+        grid-area: 3/1/4/2;
+    }
+
+    >figure:nth-child(6){
+        grid-area: 3/2/4/3;
+    }
+}
+
+
+footer{
+    font-weight: 500;
+    font-size: 14px;
+    color: #B9BDCF;
+    margin-bottom: 24px;
+
+    span{
+        font-weight: 700;
+    }
+
+    p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .profile-photo-img{
+        width:102px;
+    }
+
+    h1{
+        font-size: calc(14px + 0.4vw);
+        margin: calc(11px + 0.2vw) 0 calc(4px + 0.2vw) 0;
+    }
+
+    .location{
+        font-size: calc(10px + 0.4vw);
+    }
+
+    .images{
+        margin-top: calc(36px + 1vw);
+    }
+
+    .stat{
+        width: 78px;
+        height: 52px;
+        padding-top: 10px;
+    }
+
+    .stats{
+        width: 259px;
+    }
+
+    .value, .category{
+        font-size: calc(10px + 0.2vw);
+    }
+} 
+
+@media screen and (max-width:532px){
+    .images{
+        grid-template-columns: 109.4px 109.4px 108.6px;
+        grid-gap: 11.7px;
+        grid-template-rows: 109.4px 109.4px 109.4px;
+    }
+}
